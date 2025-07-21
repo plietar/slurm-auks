@@ -45,4 +45,4 @@ nix run .#connect -- user1@login srun --auks=yes cat /data/user2/hello.txt # Per
 
 Try the same with changing the username, see that users only see their own directory.
 
-Wait 5 seconds for the kernel's credentials cache and try without `--auks=yes` to see lots of errors.
+Wait 5 seconds for the kernel's credentials cache to expire and try without `--auks=yes` to see lots of errors.
