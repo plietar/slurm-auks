@@ -1,0 +1,12 @@
+diff --git a/src/plugins/slurm/slurm-spank-auks.c b/src/plugins/slurm/slurm-spank-auks.c
+index d0090c9..88a805e 100644
+--- a/src/plugins/slurm/slurm-spank-auks.c
++++ b/src/plugins/slurm/slurm-spank-auks.c
+@@ -101,6 +101,7 @@
+ #define AUKS_HEADER "spank-auks: "
+ 
+ #define xerror(h,a...) slurm_error(AUKS_HEADER h,##a)
++#define xdebug(h,a...) slurm_debug(AUKS_HEADER h,##a)
+ #define xinfo(h,a...) slurm_verbose(AUKS_HEADER h,##a)
+ 
+ #define AUKS_MODE_DISABLED  0
